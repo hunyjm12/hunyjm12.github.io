@@ -1,0 +1,27 @@
+# AI assistant local tool configuration (NOT part of the website)
+.agents/
+.augment/
+.claude/
+.codebuddy/
+.codewhale/
+.continue/
+.cursor/
+.factory/
+.gemini/
+.github/
+.kilocode/
+.kiro/
+.opencode/
+.qoder/
+.roo/
+.trae/
+.vscode/
+.warp/
+.windsurf/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local server / misc
+*.log

@@ -1,0 +1,189 @@
+/* ============================================================
+   Jiaming Yao Academic Homepage
+   Design System: Scholarly Navy + Citation Gold + Serif Headings
+   (Referencing al-folio, AcademicPages, Henning/MPIA, Brammer)
+   ============================================================ */
+
+/* ---------- Design Tokens (Dark is the only theme) ---------- */
+:root {
+    --color-primary: #1e3a5f;        /* deep scholarly navy */
+    --color-primary-dark: #142a47;
+    --color-accent: #b45309;         /* citation gold / amber */
+    --color-accent-soft: #1c1306;    /* warm amber tint on dark */
+    --color-bg: #0b1120;             /* deep navy-black background */
+    --color-surface: #111a2e;        /* card surface */
+    --color-text: #e5e7eb;           /* near-white text */
+    --color-text-muted: #9ca3af;
+    --color-border: #1f2a44;
+}
+
+/* Global Sharp Edge Enforcement (keep razor-sharp academic grid) */
+*, *::before, *::after {
+    border-radius: 0 !important;
+}
+
+/* ---------- Typography Base ---------- */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+/* Scholarly serif for headings (Lora) */
+h1, h2, h3, h4, .font-serif-accent {
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    color: var(--color-primary);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark .font-serif-accent {
+    color: #f1f5f9;
+}
+
+code, pre {
+    font-family: 'Fira Code', monospace;
+}
+
+/* ---------- Links ---------- */
+a {
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.academic-link {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.academic-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.dark .academic-link:hover {
+    color: #d97706;
+}
+
+/* ---------- Custom Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* ---------- Active Nav Indicator (navy + gold underline) ---------- */
+.nav-link {
+    position: relative;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+.nav-link.active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.dark .nav-link.active {
+    color: #e5e7eb;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+}
+
+/* ---------- Section Heading Accent Bar ---------- */
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.dark .section-heading {
+    color: #f1f5f9;
+}
+
+.section-heading::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.25em;
+    background-color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+/* ---------- Tag / Chip (refined gold-navy) ---------- */
+.academic-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.academic-tag:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* ---------- Line Clamp Utility ---------- */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ---------- Clean Transitions ---------- */
+section {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Improved Readability on Large Screens ---------- */
+@media (min-width: 768px) {
+    .prose-academic p {
+        font-size: 1.0625rem; /* 17px on desktop */
+        line-height: 1.8;
+    }
+}

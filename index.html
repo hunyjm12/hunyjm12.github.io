@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiaming Yao | Astrophysics</title>
+    <meta name="description" content="Academic page of Jiaming Yao - MSc in Astrophysics (University of Copenhagen / Cosmic Dawn Center).">
+    <meta name="author" content="Jiaming Yao">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#1e3a5f',
+                            dark: '#142a47',
+                        },
+                        accent: {
+                            DEFAULT: '#b45309',
+                        },
+                        paper: '#fafaf9',
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'Georgia', 'Times New Roman', 'serif'],
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Lora (serif headings) + Inter (body) + Fira Code (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-paper text-slate-700 dark:bg-[#0b1120] dark:text-slate-200 transition-colors duration-200 antialiased selection:bg-accent selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-[#0b1120]/90 sticky top-0 z-50 backdrop-blur-sm">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-base font-bold tracking-tight text-primary dark:text-white flex items-center gap-2">
+                <span class="font-mono text-accent text-xs font-semibold">[JY]</span>
+                <span class="font-serif-accent">Jiaming Yao</span>
+            </a>
+            
+            <nav class="flex items-center space-x-7 text-[13px] font-medium uppercase tracking-wider">
+                <a href="index.html" class="nav-link py-1 active">Home</a>
+                <a href="research.html" class="nav-link py-1">Research &rarr;</a>
+                <a href="outreach.html" class="nav-link py-1">Outreach</a>
+                <a href="JiamingYao_Master_Thesis.pdf" target="_blank" class="nav-link py-1">Thesis</a>
+                <a href="Resume_JiamingYao.pdf" target="_blank" class="nav-link py-1">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Landing Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-16 flex-1">
+
+        <!-- Hero Section: Profile & Short Bio -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center border-b border-slate-200 dark:border-slate-800 pb-12">
+            <!-- Avatar / Photo -->
+            <div class="md:col-span-4 flex justify-center md:justify-start">
+                <div class="w-44 h-44 border-2 border-slate-200 dark:border-slate-700 p-1.5 bg-white dark:bg-slate-900 shadow-sm">
+                    <img id="profile-img" src="figure.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Jiaming+Yao&background=1e3a5f&color=fff&size=256&font-size=0.33';" alt="Jiaming Yao" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Profile Info & Links -->
+            <div class="md:col-span-8 space-y-4 text-center md:text-left">
+                <div>
+                    <h1 class="font-serif text-4xl sm:text-5xl font-bold text-primary dark:text-white leading-tight">
+                        Jiaming Yao <span class="text-2xl sm:text-3xl font-normal text-slate-400 dark:text-slate-500">/ 姚家铭</span>
+                    </h1>
+
+                </div>
+
+                <p class="prose-academic text-[15px] sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                    I obtained my Master's degree from the University of Copenhagen (Cosmic Dawn Center). My research focuses on observational galaxy formation, gravitational lensing, and the dust properties of high-redshift star-forming galaxies.
+                </p>
+
+                <!-- Social & PDF Links -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2 font-mono text-[13px]">
+                    <a href="mailto:yjmphysics@outlook.com" class="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:border-accent hover:text-accent transition-colors">
+                        <i class="fa-solid fa-envelope text-accent"></i> Email
+                    </a>
+                    <a href="https://github.com/hunyjm12" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:border-accent hover:text-accent transition-colors">
+                        <i class="fa-brands fa-github text-accent"></i> GitHub
+                    </a>
+                    <a href="Resume_JiamingYao.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 border border-primary bg-primary text-white dark:border-slate-100 dark:bg-slate-100 dark:text-primary hover:bg-primary-dark transition-colors">
+                        <i class="fa-solid fa-file-pdf"></i> CV (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Python Plot Feature Section (From GitHub Repository) -->
+        <section class="space-y-5">
+            <div class="flex items-center justify-between border-b-2 border-slate-200 dark:border-slate-800 pb-2">
+                <h2 class="section-heading">
+                    Observational Data Matching Plot
+                </h2>
+                <a href="https://github.com/hunyjm12/Master_Project_ALCS" target="_blank" rel="noopener noreferrer" class="academic-link font-mono text-xs">
+                    hunyjm12/Master_Project_ALCS &rarr;
+                </a>
+            </div>
+
+            <!-- Image Card -->
+            <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-4 shadow-sm">
+                <div class="overflow-hidden border border-slate-200 dark:border-slate-800 bg-[#0b1120] flex items-center justify-center p-2">
+                    <img src="img/a370_skyimage.png" alt="ALCS A370 Sky Image Matching Plot (Python)" class="max-h-96 w-auto object-contain">
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between text-sm text-slate-500 dark:text-slate-400 gap-2 font-mono pt-1">
+                    <p class="text-slate-600 dark:text-slate-300">Optical/NIR (HST &amp; Spitzer) and ALMA 1.2&nbsp;mm counterpart matching in the Abell 370 cluster field.</p>
+                    <a href="https://github.com/hunyjm12/Master_Project_ALCS/blob/main/a370_skyimage.ipynb" target="_blank" class="academic-link font-mono text-xs shrink-0">View Python Notebook &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simplified Research Interests (No Formulas) -->
+        <section class="space-y-5">
+            <div class="border-b-2 border-slate-200 dark:border-slate-800 pb-2 flex items-center justify-between">
+                <h2 class="section-heading">
+                    Research Interests
+                </h2>
+                <a href="research.html" class="academic-link font-mono text-xs">
+                    Detailed Research Page &rarr;
+                </a>
+            </div>
+
+            <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[15px] text-slate-700 dark:text-slate-300">
+                    <li class="flex items-start gap-3 p-3 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 hover:border-accent transition-colors">
+                        <span class="text-accent font-bold mt-0.5">&rsaquo;</span>
+                        <span>Dusty Star-Forming Galaxies (DSFGs) at high redshift</span>
+                    </li>
+                    <li class="flex items-start gap-3 p-3 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 hover:border-accent transition-colors">
+                        <span class="text-accent font-bold mt-0.5">&rsaquo;</span>
+                        <span>ALMA Lensing Cluster Survey (ALCS) &amp; Gravitational Lensing</span>
+                    </li>
+                    <li class="flex items-start gap-3 p-3 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 hover:border-accent transition-colors">
+                        <span class="text-accent font-bold mt-0.5">&rsaquo;</span>
+                        <span>Multi-wavelength Photometry &amp; SED Fitting</span>
+                    </li>
+                    <li class="flex items-start gap-3 p-3 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 hover:border-accent transition-colors">
+                        <span class="text-accent font-bold mt-0.5">&rsaquo;</span>
+                        <span>UVJ Color Diagnostics &amp; Star Formation Rate Analysis</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-7 text-center text-xs font-mono text-slate-400">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p>&copy; 2026 Jiaming Yao</p>
+            <div class="space-x-5">
+                <a href="research.html" class="hover:text-accent transition-colors">Research</a>
+                <a href="outreach.html" class="hover:text-accent transition-colors">Outreach</a>
+                <a href="JiamingYao_Master_Thesis.pdf" target="_blank" class="hover:text-accent transition-colors">Thesis PDF</a>
+                <a href="Resume_JiamingYao.pdf" target="_blank" class="hover:text-accent transition-colors">CV PDF</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
