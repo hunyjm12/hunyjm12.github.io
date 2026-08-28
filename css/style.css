@@ -14,12 +14,13 @@
     --color-surface: #111a2e;        /* card surface */
     --color-text: #e5e7eb;           /* near-white text */
     --color-text-muted: #9ca3af;
-    --color-border: #1f2a44;
+    --color-border: transparent;     /* Completely transparent borders */
 }
 
-/* Global Sharp Edge Enforcement (keep razor-sharp academic grid) */
+/* Global Sharp Edge Enforcement & Border Removal */
 *, *::before, *::after {
     border-radius: 0 !important;
+    border-color: transparent !important; /* Forces all borders to be invisible */
 }
 
 /* ---------- Typography Base ---------- */
