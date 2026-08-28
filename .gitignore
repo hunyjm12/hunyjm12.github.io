@@ -25,3 +25,13 @@ Thumbs.db
 
 # Local server / misc
 *.log
+
+# Teaching workspace (learning materials — NOT part of the website)
+MISSION.md
+RESOURCES.md
+NOTES.md
+GLOSSARY.md
+lessons/
+reference/
+learning-records/
+assets/
