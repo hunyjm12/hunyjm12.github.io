@@ -79,12 +79,9 @@
         <!-- Page Header -->
         <div class="border-b-2 border-slate-200 dark:border-slate-800 pb-4">
             <h1 class="font-serif text-3xl font-bold text-primary dark:text-white flex items-center justify-between">
-                <span>Research &amp; Open Source Projects</span>
-                <span class="font-mono text-xs font-normal text-slate-400">Astrophysics</span>
+                <span>Research</span>
+
             </h1>
-            <p class="text-[15px] text-slate-500 dark:text-slate-400 mt-2">
-                A summary of research projects, thesis work, observational programs, and GitHub repositories.
-            </p>
         </div>
 
         <!-- Featured Project: ALCS Master's Project -->
@@ -92,30 +89,20 @@
             <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-8 space-y-5 shadow-sm">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b-2 border-slate-100 dark:border-slate-800 pb-3">
                     <div>
-                        <span class="font-mono text-[11px] text-accent font-bold uppercase tracking-wider">Master's Thesis Project</span>
                         <h2 class="font-serif text-xl font-bold text-primary dark:text-white mt-1">
                             Dusty Galaxies in ALMA Lensing Cluster Survey (ALCS)
                         </h2>
                     </div>
-                    <a href="https://github.com/hunyjm12/Master_Project_ALCS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 border border-primary bg-primary text-white dark:border-slate-100 dark:bg-slate-100 dark:text-primary hover:bg-primary-dark text-xs font-mono uppercase tracking-wider transition-colors shrink-0">
-                        <i class="fa-brands fa-github"></i> Repository &rarr;
-                    </a>
                 </div>
 
                 <p class="text-[15px] text-slate-600 dark:text-slate-300 leading-relaxed">
                     This project uses optical/NIR photometry from Hubble Space Telescope (HST) and <em>Spitzer</em> combined with ALMA 1.2&nbsp;mm continuum data across 33 galaxy lensing cluster fields. Gravitational lensing by cluster magnification enables the study of faint, dust-obscured star-forming galaxies at high redshift.
                 </p>
 
-                <!-- Observational Data Matching Plot -->
-                <div class="bg-[#0b1120] p-2 flex items-center justify-center">
-                    <img src="img/a370_skyimage.png" alt="ALCS A370 Sky Image Matching Plot (Python)" class="max-h-[30rem] w-auto object-contain">
-                </div>
-                <p class="text-sm text-slate-500 dark:text-slate-400 font-mono">
-                    Optical/NIR (HST &amp; Spitzer) and ALMA 1.2&nbsp;mm counterpart matching in the Abell 370 cluster field.
-                </p>
+
 
                 <!-- Key Pipeline Components -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="grid grid-cols-1 gap-4 pt-2">
                     <div class="p-4 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1.5 hover:border-accent transition-colors">
                         <div class="font-serif font-bold text-[15px] text-primary dark:text-slate-100">
                             1. Multi-band Source Cross-Matching
@@ -123,9 +110,13 @@
                         <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                             Automated spatial cross-matching between optical/NIR catalogs and 1.2&nbsp;mm ALMA detections.
                         </p>
-                        <div class="font-mono text-xs text-accent pt-1">
-                            Script: <a href="https://github.com/hunyjm12/Master_Project_ALCS/blob/main/MatchAndPlot.py" target="_blank" class="hover:underline">MatchAndPlot.py</a>
+                        <!-- Observational Data Matching Plot -->
+                        <div class="bg-[#0b1120] p-2 flex items-center justify-center">
+                            <img src="img/a370_skyimage.png" alt="ALCS A370 Sky Image Matching Plot (Python)" class="max-h-[30rem] w-auto object-contain">
                         </div>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 font-mono">
+                            Optical/NIR (HST &amp; Spitzer) and ALMA 1.2&nbsp;mm counterpart matching in the Abell 370 cluster field.
+                        </p>
                     </div>
 
                     <div class="p-4 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1.5 hover:border-accent transition-colors">
@@ -135,87 +126,36 @@
                         <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                             Rescaling modified blackbody distributions to ALMA 1.2&nbsp;mm flux density to derive dust temperature, infrared luminosity, and dust mass.
                         </p>
-                        <div class="font-mono text-xs text-accent pt-1">
-                            Script: <a href="https://github.com/hunyjm12/Master_Project_ALCS/blob/main/main_body.py" target="_blank" class="hover:underline">main_body.py</a>
-                        </div>
                     </div>
 
                     <div class="p-4 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1.5 hover:border-accent transition-colors">
                         <div class="font-serif font-bold text-[15px] text-primary dark:text-slate-100">
-                            3. Star Formation Rate ($SFR_{\mathrm{UV+IR}}$)
+                            3. Galatic properties from UV+IR
                         </div>
                         <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                             Deriving total star formation rates from combined unobscured UV and dust-obscured IR luminosities.
                         </p>
-                        <div class="font-mono text-xs text-accent pt-1">
-                            Script: <a href="https://github.com/hunyjm12/Master_Project_ALCS/blob/main/SfrCalculate.py" target="_blank" class="hover:underline">SfrCalculate.py</a>
-                        </div>
                     </div>
 
                     <div class="p-4 border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 space-y-1.5 hover:border-accent transition-colors">
                         <div class="font-serif font-bold text-[15px] text-primary dark:text-slate-100">
-                            4. Resting UVJ Color Diagrams
+                            4. Color-color Diagrams
                         </div>
                         <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                             Testing resting UVJ color space to distinguish between red quiescent galaxies and dust-obscured starbursts.
                         </p>
-                        <div class="font-mono text-xs text-accent pt-1">
-                            Output: <a href="https://github.com/hunyjm12/Master_Project_ALCS/tree/main/Examples-of-Output" target="_blank" class="hover:underline">Examples-of-Output/</a>
+                        <!-- UVJ Color-Color Diagram -->
+                        <div class="bg-[#0b1120] p-2 flex items-center justify-center">
+                            <img src="uvj.png" alt="UVJ Color-Color Diagram (Python)" class="max-h-[30rem] w-auto object-contain">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Master's Thesis Section -->
-        <section class="space-y-5">
-            <div class="border-b-2 border-slate-200 dark:border-slate-800 pb-2">
-                <h2 class="section-heading">
-                    Master's Thesis
-                </h2>
-            </div>
+        
 
-            <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 space-y-4 shadow-sm">
-                <h3 class="font-serif text-lg font-bold text-primary dark:text-slate-100">
-                    The Optical and Infrared Properties of Dusty Star-forming Galaxies in ALCS
-                </h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400 font-mono">
-                    University of Copenhagen &middot; Cosmic Dawn Center (DAWN), Niels Bohr Institute &middot; May 2022
-                </p>
-                <p class="text-[15px] text-slate-600 dark:text-slate-300 leading-relaxed italic border-l-2 border-accent pl-4">
-                    "Dust is a powerful proxy for studying star formation and interstellar molecules. In this thesis, we combined ALCS 1.2&nbsp;mm continuum maps with HST and Spitzer photometric catalogs to study dusty star-bursting candidates at $z = 0 \sim 5$. Results demonstrate that combining UV and IR indicators describes star formation activity far better than SED fitting alone, and UVJ diagrams reliably distinguish quiescent galaxies from dust-reddened star-forming galaxies."
-                </p>
-
-                <div class="pt-2">
-                    <a href="JiamingYao_Master_Thesis.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 border border-primary bg-primary text-white dark:border-slate-100 dark:bg-slate-100 dark:text-primary hover:bg-primary-dark text-xs font-mono uppercase tracking-wider transition-colors">
-                        <i class="fa-solid fa-file-pdf"></i> Download Thesis PDF (62 Pages)
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Other Experience Highlights -->
-        <section class="space-y-5">
-            <div class="border-b-2 border-slate-200 dark:border-slate-800 pb-2">
-                <h2 class="section-heading">
-                    Observational &amp; Conference Highlights
-                </h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-2 hover:border-accent transition-colors shadow-sm">
-                    <span class="text-accent font-mono text-xs font-bold tracking-wide">[NOT Summer School 2021]</span>
-                    <p class="text-slate-800 dark:text-slate-200 font-serif font-semibold text-base">Nordic Optical Telescope (La Palma)</p>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Operated ALFOSC and FIES instruments on the 2.56&nbsp;m telescope, reduced spectra and CCD images for novae, SNe, and white dwarfs.</p>
-                </div>
-
-                <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 space-y-2 hover:border-accent transition-colors shadow-sm">
-                    <span class="text-accent font-mono text-xs font-bold tracking-wide">[IHEP HXMT Assistant 2019]</span>
-                    <p class="text-slate-800 dark:text-slate-200 font-serif font-semibold text-base">Chinese Academy of Sciences (Beijing)</p>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Identified Gamma-Ray Burst (GRB) signals in Insight-HXMT light curves and submitted candidates to GCN network.</p>
-                </div>
-            </div>
-        </section>
+    
 
     </main>
 
